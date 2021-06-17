@@ -36,3 +36,77 @@
     flex-flow: column wrap;
     height: 250px;
 }
+
+.conteudoPrincipal-cursos {
+    display: flex;  
+    flex-wrap: wrap;
+}
+
+.conteudoPrincipal-cursos-link {
+    width: 23%;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n){
+    margin-right: 0;
+}
+
+.conteudoPrincipal-cursos-link:nth-child(4n + 1){
+    margin-left: 0;
+}
+
+.videoSobre .container {
+    display: flex;
+    justify-content: center;
+}
+
+/* MOBILE */
+@media(max-width: 768px){
+
+    .cabecalhoPrincipal-nav {
+        flex-direction: column;
+    }
+    
+    .cabecalhoPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+        text-align: center;
+    }
+    
+    .conteudoPrincipal-cursos-link {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .videoSobre .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .rodapePrincipal-navMap-list {
+        height: 100%;
+    }
+    
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rodapePrincipal-patrocinadores-list {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    
+    .rodapePrincipal-contatoForm {
+        width: auto;
+    }
+    
+    .rodapePrincipal-patrocinadores-list li {
+        margin-bottom: 10px;
+    }
+    
+    .videoSobre-button {
+        width: 100%;
+    }
+
+}
